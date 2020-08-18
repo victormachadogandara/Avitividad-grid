@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Grid</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Columnas del mismo ancho</h1>
+        <div class="row">
+            <div class="col" style="background-color: crimson;">
+                <p style="color: white;">Columna 1</p>
+            </div>
+            <div class="col" style="background-color: darkblue;">
+                <p style="color: white;">Columna 2</p>
+            </div>
+            <div class="col" style="background-color: yellow;">
+                <p>Columna 3</p>
+            </div>
+        </div>
+        <h1>Columnas del mismo ancho con breakpoint</h1>
+        <div class="row">
+            <!--
+                sm : Estra small
+                sm : Small
+                md : Medium
+                lg : Large
+                xl : Extra large
+            -->
+            <div class="col-sm" style="background-color: teal;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-sm" style="background-color: aqua;">
+                <p>Columna 2</p>
+            </div>
+            <div class="col-md" style="background-color: aquamarine;">
+                <p>Columna 3</p>
+            </div>
+        </div>
+        <h1>Saltos de linea</h1>
+        <div class="row">
+            <div class="col-md" style="background-color:darkgreen">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-md" style="background-color:blanchedalmond">
+                <p>Columna 2</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col" style="background-color:blueviolet">
+                <p>Columna 3</p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col" style="background-color:darkgrey">
+                <p>Columna 4</p>
+            </div>
+            <div class="col" style="background-color:gold">
+                <p>Columna 5</p>
+            </div>
+        </div>
+        <h1>Columnas de ancho definido</h1>
+        <!--
+            El row tiene 12 slots
+        -->
+        <div class="row">
+            <div class="col-3" style="background-color: goldenrod;">
+                <p>Columna 1</p>
+            </div>
+            <div class="col-5" style="background-color:green">
+                <p>Columna 2</p>
+            </div>
+            <div class="col-4" style="background-color:hotpink">
+                <p>Columna 3</p>
+            </div>
+        </div>
+        <h1>Columan de ancho definido con breakpoint</h1>
+        <div class="row">
+            <div class="col-sm-5" style="background-color: indigo;">
+                <p style="color: white;">Columna 1</p>
+            </div>
+            <div class="col-md-4" style="background-color:midnightblue;">
+                <p style="color: white;">Columna 2</p>
+            </div>
+            <div class="col-lg-3" style="background-color:orangered">
+                <p>Columna 3</p>
+            </div>
+        </div>
+        <h1>Columna de ancho variable</h1>
+        <div class="row">
+            <div class="col-2" style="background-color: darkorchid;">
+                <p>Columan 1</p>
+            </div>
+            <div class="col-md-auto" style="background-color: deeppink;">
+                <p>Columna 2 - ancho variable con sexo, paa experimentar que sucede con el texo mas largo asdga asdgdfg</p>
+            </div>
+            <div class="col-2" style="background-color: darkorchid;">
+                <p>Columan 3</p>
+            </div>
+        </div>
+        <h1>Comninaciones de clases</h1>
+        <div class="row">
+            <div class="col-4 col-md-6" style="background-color:forestgreen">
+                <p>Columan 1</p>
+            </div>
+            <div class="col-4 col-md-3" style="background-color:lightskyblue">
+                <p>Columna 2</p>
+            </div>
+            <div class="col-4 col-md-3" style="background-color:violet">
+                <p>Columan 3</p>
+            </div>
+        </div>
+        <h1>Filas con columnas definidas</h1>
+        <div class="row">
+            <div class="col" style="background-color:forestgreen">
+                <p>Columan 1</p>
+            </div>
+            <div class="col" style="background-color:lightskyblue">
+                <p>Columna 2</p>
+            </div>
+            <div class="col" style="background-color:violet">
+                <p>Columan 3</p>
+            </div>
+            <div class="col" style="background-color:brown">
+                <p>Columan 4</p>
+            </div>
+            <div class="col" style="background-color:navy">
+                <p>Columna 5</p>
+            </div>
+            <div class="col" style="background-color:tomato">
+                <p>Columan 6</p>
+            </div>
+        </div>
+        <h1>Start</h1>
+        <div class="row justify-content-start">
+            <div class="col-4" style="background-color:forestgreen">
+                <p>Columan 1</p>
+            </div>
+            <div class="col-4" style="background-color:lightskyblue">
+                <p>Columna 2</p>
+            </div>
+        </div>
+        <h1>Center</h1>
+        <div class="row justify-content-center">
+            <div class="col-4" style="background-color:forestgreen">
+                <p>Columan 1</p>
+            </div>
+            <div class="col-4" style="background-color:lightskyblue">
+                <p>Columna 2</p>
+            </div>
+        </div>
+        <h1>End</h1>
+        <div class="row justify-content-end">
+            <div class="col-4" style="background-color:forestgreen">
+                <p>Columan 1</p>
+            </div>
+            <div class="col-4" style="background-color:lightskyblue">
+                <p>Columna 2</p>
+            </div>
+        </div>
+        <h1>between</h1>
+            <div class="row justify-content-between">
+                <div class="col-4" style="background-color: darkorange;">
+                    <p>Columna 1</p>
+                </div>
+                <div class="col-4" style="background-color: darkorchid;">
+                    <p>Columna 2</p>
+                </div>
+            </div>
+            <h1>Reordenamiento</h1>
+            <div class="row">
+                <div class="col order-12" style="background-color: darkorchid;">
+                    <p>Columna 1 (orden 12)</p>
+                </div>
+                <div class="col order-11" style="background-color: darkred;">
+                    <p>Columna 2 (ordern 11)</p>
+                </div>
+                <div class="col order-1" style="background-color: darksalmon;">
+                    <p>Columna 3 (orden 1)</p>
+                </div>
+            </div>
+            <h1>Offset</h1>
+            <div class="row">
+                <div class="col-3" style="background-color: darkred;">
+                    <p>Columna 1 (orden 1)</p>
+                </div>
+                <div class="offset-md-2 offset-lg-4 col-4" style="background-color: darksalmon;">
+                    <p>Columna 2 (orden 1)</p>
+                </div>
+            </div>
+            <h1>Nesting</h1>
+            <div class="row">
+                <div class="col">
+                    <p>Columna 1</p>
+                    <div class="row">
+                        <div class="col">
+                            Columna a
+                        </div>
+                        <div class="col">
+                            Columna b
+                        </div>
+                        <div class="col">
+                            Columna c
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Columna 2</p>
+                </div>
+            </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
